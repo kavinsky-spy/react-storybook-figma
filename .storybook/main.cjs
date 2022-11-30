@@ -15,12 +15,12 @@ module.exports = {
   "features": {
     "storyStoreV7": true
   },
-  // viteFinal: (config, { configType }) => {
-  //   if (configType === 'PRODUCTION') {
-  //     config.base = '/react-storybook-figma/'
-  //   }
+  viteFinal: (config, { configType }) => {
+    if (configType === 'PRODUCTION') {
+      config.base = '/react-storybook-figma/'
+    }
 
-  //   return config
-  // }
+    return config
+  }
 
 }
